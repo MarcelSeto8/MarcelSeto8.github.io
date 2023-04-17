@@ -47,16 +47,40 @@ se definen dentro de la etiqueta de apertura de un elemento y contienen informac
 
 DTD es una descripción de estructura y sintaxis de un documento XML o SGML, además también se utiliza para definir los tipos de datos que se utilizan.
 
-Hay dos tipos de etiquetas:
+**Hay dos tipos de etiquetas:**
 * Las que tienen datos
 * Las que estan vacias
 
-Simbolos de las etiquetas:
+**Simbolos de las etiquetas:**
 
 * ? --> Esta 0 o 1 vez
 
-* + --> Esta 1 o más veces repetido
+* /+ --> Esta 1 o más veces repetido
 
 * *: --> Esta 0 o más veces repetido
+
+><!ELEMNT character (name, surname, age, race, 
+ class,gender, height,
+ weight, language, tienelaeso?, weapons?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT surname (#PCDATA)>
+<!ELEMENT age EMPTY>
+<!ELEMENT race (#PCDATA)>
+<!ELEMENT class (#PCDATA)>
+<!ELEMENT gender (#PCDATA)>
+<!ELEMENT height EMPTY>
+<!ELEMENT weight EMPTY>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT tienelaeso EMPTY>
+<!ELEMNT weapons (weapon*)>
+<!ELEMENT weapon EMPTY>
+
+<!ATTLIST age years CDATA #REQUIRED>
+<!ATTLIST gender abbrev CDATA #REQUIRED>
+<!ATTLIST height cm CDATA #REQUIRED>
+<!ATTLIST weight kg CDATA #REQUIRED>
+<!ATTLIST language abbrev CDATA #REQUIRED>
+<!ATTLIST language prefix CDATA>
+<!ATTLIST id_weapon CDATA #REQUIRED>
 
 ## LENGUAJES SIMILARES A XML
