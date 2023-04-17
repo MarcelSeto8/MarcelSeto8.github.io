@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Home: Marcel Setó</title>
+		<link rel="stylesheet" href="style.css" />
+		
+		<script>
+			/*console.log("ola k ase");
+			
+			let variable = 33;
+			let toniInicio = "toni es ";
+			let toniFinalUno = "IMBECIL";
+			let toniFinalDos = "GUAPO";
+			
+			let contador = 0;
+			while(contador < 5){
+				
+				contador++;
+			}
+			
+			for (let i=0; i < 10; i++){
+				if (i % 2 == 0)
+					console.log("["+i+"]. " + toniInicio + toniFinalUno);
+				else
+					console.log("["+i+"]. " + toniInicio + toniFinalDos);
+			}*/
+			
+			function insultoHaciaToni(){
+				let insultos = ["PERRO", "GUARRO", "MALO", "PABLO LADRON DE CHOCOBOX", "ATAQUE EN GUERRA"];
+				var indiceAleatorio = Math.floor(Math.random() * insultos.length);
+				console.log("Toni es un " + insultos[indiceAleatorio]);
+				return "Toni es un " + insultos[indiceAleatorio];
+			}
+			
+			
+			
+			function alerta_maxima(){
+				alert("Nos estan jaqueando");
+			}
+			
+			let cuenta_atras = 0;
+			
+			function cuenta(){
+				cuenta_atras++;
+				
+				document.getElementById("numerito").innerHTML += " - " + cuenta_atras; /*contiene todos los elementos de la pagina web, en este caso numerito se trata de la id de un elemento <p> // innerHTML es el texto interior de la id numerito*/
+				
+				console.log(cuenta_atras);
+				if(cuenta_atras % 10 == 0){
+					alert("QUE MIRAS BOBO, TE VA A COMER EL OSO");
+					document.getElementById("numerito").innerHTML += " - " + insultoHaciaToni();
+				}
+			}
+			
+			function numAzar(){
+				var numAleatorio = Math.floor(Math.random() * 100) + 1;
+				document.getElementById("numerito").innerHTML = numAleatorio;
+			}
+			
+		</script>
+		
+	</head>
+		
+	<body>
+		<header>
+			<h1><a href="index.html">Marcel Setó</a></h1>
+			<p>Alumno de Ciberseguridad en <abbr title="Escola de Noves Tecnologies">ENTI</abbr></p>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cv.html"><abbr title="Curriculum Vitae">CV</abbr></a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+		
+		<main>
+			<h2>Para inspirarte:</h2>
+			<blockquote>
+			El hombre como el oso cuando más peludo mas hermoso. <em>Mi abuela</em>
+			<p><img src="oso.jpg" title= "Osardo" alt="Oso sacando la boca"/></p>
+			</blockquote>
+			
+			<hr>
+			
+			<form>
+			<h2>Pulse el boton para obtener un número aleatorio (1-100): </h2>
+			<p id="numerito">0</p>
+			<input type="button" value="Clicka" onClick="numAzar();"/>
+			</form>
+			
+			<hr>
+			
+			<h2>Ficha</h2>
+			<p><img src="https://d273yxk2oj202w.cloudfront.net/upldr/enti-classlife-education/2023/03/07/minithumbnail/4684.jpg" title="Foto Marcel" alt="Foto Classlife Marcel"/></p>
+			<h3>Asignaturas</h3>
+			<ul>
+				<li>M01: Implantación de sistemas operativos
+					<ul>
+						<li>UF1: Instalación, configuración y explotación del sistema informático</li>
+						<li>UF2: Gestión de la infroamción y de recursos en red</li>
+						<li>UF3: Implantación de programario especifico</li>
+						<li>UF4: Seguridad, rendimiento y recursos</li>
+					</ul>
+				</li>
+				<li>M02: Gestión de base de datos
+					<ul>
+						<li>UF1: Introducción a las bases de datos</li>
+						<li>UF2: LenguajesSQL: DML y DDL</li>
+						<li>UF3: Seguridad de la información</li>
+					</ul>
+				</li>
+				<li>M03: Lenguaje de marcas
+					<ul>
+						<li>UF1: Programación con XML</li>
+						<li>UF2: Ámbitos de aplicación de XML</li>
+						<li>UF3: Sistemas de gestión empresarial</li>
+					</ul>
+				</li>
+			</ul>
+			
+			<hr>
+			
+			<h2>Vídeo YouTube</h2>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/GWCldYPEsl4?start=510&loop=1&playlist=GWCldYPEsl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</main>
+		
+		<footer>
+			<p>Marcel Setó (c) 2023</p>
+		</footer>
+	</body>
+	
+</html>
