@@ -40,11 +40,22 @@ Cada elemento se define mediante una etiqueta de apertura y una etiqueta de cier
 Por ejemplo, el elemento "libro" puede definirse con las etiquetas <libro> y </libro>, además estos elementos pueden contener atributos. Los cuales
 se definen dentro de la etiqueta de apertura de un elemento y contienen información adicional sobre el elemento en cuestión. Por ejemplo, el atributo 
 "id" se puede usar para identificar de manera única el elemento.
+
 ![CUERPO_XML](cuerpo_xml.png)
 
-
-
-
 ## DTD
+
+DTD es una descripción de estructura y sintaxis de un documento XML o SGML, además también se utiliza para definir los tipos de datos que se utilizan.
+
+Hay dos tipos de etiquetas:
+* Las que tienen datos
+* Las que estan vacias
+
+Simbolos de las etiquetas:
+*? --> Esta 0 o 1 vez
+
+*+ --> Esta 1 o más veces repetido
+
+* *: --> Esta 0 o más veces repetido
 
 ## LENGUAJES SIMILARES A XML
