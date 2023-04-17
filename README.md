@@ -16,8 +16,8 @@ Para solucionar estos problemas, se buscó definir un subconjunto de SGML que pe
 la creación de analizadores simples y hacer hincapié en que no se acepte nunca un documento con errores de sintaxis, lo que dio lugar a la creación de XML. 
 XML se enfoca en hacer las cosas más sencillas para los programas automáticos que necesiten interpretar el documento, 
 en lugar de facilitar la escritura manual de documentos como SGML.
->Más información sobre Tim Berners Lee 
-![TIM_BERNERS](https://es.wikipedia.org/wiki/Tim_Berners-Lee#/media/Archivo:Sir_Tim_Berners-Lee_(cropped).jpg)
+>Más información sobre Tim Berners Lee: [WIKI_TIM](https://es.wikipedia.org/wiki/Tim_Berners-Lee)
+![TIM_BERNERS](https://cdn.britannica.com/22/221822-050-3B0A657F/British-scientist-Tim-Berners-Lee.jpg)
 
 ## VENTAJAS DE XML SOBRE OTROS LENGUAJES
 
@@ -27,12 +27,12 @@ en lugar de facilitar la escritura manual de documentos como SGML.
 
 ## ESTRUCTURA DOCUMENTO XML 
 
-* **CABECERA**
+* **CABECERA:**
 Todo archivo XML contiene la primera línea(cabecera) **<?xml version="1.0" encoding="UTF-8"?>**. 
 Esta sirve para especifica la versión de XML que se está utilizando y la codificación de caracteres utilizada en el archivo. 
-![LOGO_XML](https://cdn-icons-png.flaticon.com/512/2306/2306109.png)
+![CABECERA_XML](https://www.abrirllave.com/dtd/images/iniciar-xml-copy-editor.gif)
 
-* **CUERPO**
+* **CUERPO:**
 El cuerpo del documento se compone de una estructura jerárquica de elementos o etiquetas que contienen información organizada en forma de texto. 
 Cada elemento se define mediante una etiqueta de apertura y una etiqueta de cierre. 
 Por ejemplo, el elemento "libro" puede definirse con las etiquetas <libro> y </libro>, además estos elementos pueden contener atributos. Los cuales
