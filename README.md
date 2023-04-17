@@ -52,9 +52,10 @@ Hay dos tipos de etiquetas:
 * Las que estan vacias
 
 Simbolos de las etiquetas:
-*? --> Esta 0 o 1 vez
 
-*+ --> Esta 1 o más veces repetido
+* ? --> Esta 0 o 1 vez
+
+* + --> Esta 1 o más veces repetido
 
 * *: --> Esta 0 o más veces repetido
 
