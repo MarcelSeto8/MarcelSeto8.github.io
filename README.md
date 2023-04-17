@@ -5,6 +5,7 @@ Estos son los diferentes apuntes que he ido tomando durante las clases sobre el 
 Es un lenguaje de marcas diseñado para describir datos estructurados y facilitar el intercambio de información entre diferentes sistemas informáticos. 
 A diferencia de otros lenguajes, XML ofrece soporte a bases de datos y resulta especialmente útil cuando varias aplicaciones necesitan comunicarse 
 entre sí o integrar información.
+
 ![LOGO_XML](https://cdn-icons-png.flaticon.com/512/2306/2306109.png)
 
 ## LA HISTORIA DE XML
@@ -30,6 +31,7 @@ en lugar de facilitar la escritura manual de documentos como SGML.
 * **CABECERA:**
 Todo archivo XML contiene la primera línea(cabecera) **<?xml version="1.0" encoding="UTF-8"?>**. 
 Esta sirve para especifica la versión de XML que se está utilizando y la codificación de caracteres utilizada en el archivo. 
+
 ![CABECERA_XML](https://www.abrirllave.com/dtd/images/iniciar-xml-copy-editor.gif)
 
 * **CUERPO:**
