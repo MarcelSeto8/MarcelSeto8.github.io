@@ -27,10 +27,12 @@ en lugar de facilitar la escritura manual de documentos como SGML.
 
 ## ESTRUCTURA DOCUMENTO XML 
 
+* **CABECERA**
 Todo archivo XML contiene la primera línea(cabecera) **<?xml version="1.0" encoding="UTF-8"?>**. 
 Esta sirve para especifica la versión de XML que se está utilizando y la codificación de caracteres utilizada en el archivo. 
 ![LOGO_XML](https://cdn-icons-png.flaticon.com/512/2306/2306109.png)
 
+* **CUERPO**
 El cuerpo del documento se compone de una estructura jerárquica de elementos o etiquetas que contienen información organizada en forma de texto. 
 Cada elemento se define mediante una etiqueta de apertura y una etiqueta de cierre. 
 Por ejemplo, el elemento "libro" puede definirse con las etiquetas <libro> y </libro>, además estos elementos pueden contener atributos. Los cuales
