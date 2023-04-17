@@ -55,11 +55,11 @@ DTD es una descripción de estructura y sintaxis de un documento XML o SGML, ade
 
 * ? --> Esta 0 o 1 vez
 
-* /+ --> Esta 1 o más veces repetido
+* + --> Esta 1 o más veces repetido
 
 * *: --> Esta 0 o más veces repetido
 
-><!ELEMNT character (name, surname, age, race, 
+```<!ELEMNT character (name, surname, age, race, 
  class,gender, height,
  weight, language, tienelaeso?, weapons?)>
 <!ELEMENT name (#PCDATA)>
@@ -81,6 +81,6 @@ DTD es una descripción de estructura y sintaxis de un documento XML o SGML, ade
 <!ATTLIST weight kg CDATA #REQUIRED>
 <!ATTLIST language abbrev CDATA #REQUIRED>
 <!ATTLIST language prefix CDATA>
-<!ATTLIST id_weapon CDATA #REQUIRED>
+<!ATTLIST id_weapon CDATA #REQUIRED>```
 
 ## LENGUAJES SIMILARES A XML
