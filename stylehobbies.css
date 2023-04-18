@@ -12,6 +12,12 @@ header:hover{
 	background-color:#ffffff;
 	
 }	
+
+footer:hover{
+	background-color:#ffffff;
+	
+}
+		
 		
 header h1{ 
 	margin:0;
@@ -38,6 +44,12 @@ header p{
 }
 
 header:hover p{ 
+	color:#000000;
+	padding:0 0 8px 0;
+	text-align:center;
+}
+
+footer:hover p{ 
 	color:#000000;
 	padding:0 0 8px 0;
 	text-align:center;

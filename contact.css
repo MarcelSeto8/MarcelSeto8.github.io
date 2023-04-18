@@ -1,0 +1,35 @@
+#contact-main{
+padding:22px;
+
+}
+
+#contact-main h2{
+	text-shadow:2px 2px 10px #171718;
+	text-align:center;
+	font-family:courier,serif;	
+	margin:20px;
+
+}
+
+
+#contact-main form p{
+	display:flex;
+	padding:12px 4px 12px 4px;
+	margin:0;
+	/*border:1px solid #000000;*/
+	
+
+}
+
+#contact-main form label{
+	width:132px;
+	
+}
+
+#contact-main form p:nth-child(odd){
+background-color:#A0A29E;
+}
+
+#contact-main form p:nth-child(even){
+background-color:#959594;
+}
