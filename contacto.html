@@ -25,13 +25,13 @@
 		<main id="contact-main">
 		<h2>Formulario de contacto</h2>
 
-		<form method="post" action="">
+		<form action="https://formsubmit.co/marcel.seto@enti.cat" method="POST">
 		<p><label for="nombre">Nombre:</label> <input type="text" name="contact_name" id="nombre" required/></p>
 		<p><label for="gmail">Correo Electrónico:</label> <input type="email" name="contact_mail" id="email" required/></p>
 		<p>
 			<label for="country">Country: </label><span style="color: red !important; display: inline; float: none;" required>    
         
-            <select id="country" name="country" class="form-control">
+            <select id="country" name="contact_country" class="form-control">
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
                 <option value="Albania">Albania</option>
@@ -280,7 +280,7 @@
 		</p>
 		
 		
-		<p><label for="comentario">Comentario :</label><br><textarea name="Comentario" id="comentario" rows="4" cols="50" required=""></textarea></p>
+		<p><label for="comentario">Comentario :</label><br><textarea name="contact_comentario" id="comentario" rows="4" cols="50" required=""></textarea></p>
 				
 
 		<p><input type="submit" value="Enviar" /></p>

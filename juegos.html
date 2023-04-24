@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Juegos: Marcel Setó</title>
+		<link rel="stylesheet" href="style.css" />
+		
+		<script>
+		let numero =  Math.floor(Math.random()*100+1);	
+		function adivinaNumero(){
+			console.log(numero);
+			
+			let jugador = document.getElementById("numero_jugador").value;
+			console.log(jugador);
+
+			let valor = parseInt(jugador);
+
+			if (isNaN(valor)){
+				document.getElementById("resultado").innerHTML = "<strong class=\"error\">ERROR</strong>";
+				return;
+			}
+
+			if (valor > numero) {
+				document.getElementById("resultado").innerHTML = ("<em>El numero que busca es menor que: " + valor + "</em>");
+			}
+			else if (valor < numero){
+				document.getElementById("resultado").innerHTML = ("<em>El numero que busca es mayor que: " + valor + "</em>");
+			}
+			else{
+				document.getElementById("resultado").innerHTML = ("<strong>Buen trabaho papurri. Encontraste el número</strong>");
+			}
+		}	
+			
+		</script>
+		
+	</head>
+		
+	<body>
+		<header>
+			<h1><a href="index.html">Marcel Setó</a></h1>
+			<p>Alumno de Ciberseguridad en <abbr title="Escola de Noves Tecnologies">ENTI</abbr></p>
+		</header>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="cv.html"><abbr title="Curriculum Vitae">CV</abbr></a></li>
+				<li><a href="hobbies.html">Hobbies</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+				<li><a href="juegos.html">Juegos</a></li>
+			</ul>
+		</nav>
+			<h2 id="titulo_juego">Adivina el número entre el 1 y el 100</h2>
+			<p id="resultado">Introduce un número</p>
+			<p><input type="text" id="numero_jugador"/></p>
+			<button type="button" onClick="adivinaNumero();" id="botoncito">¡Adivina!</button>
+		<main>
+		
+		</main>
+		
+		<footer>
+			<p>Marcel Setó (c) 2023</p>
+		</footer>
+	</body>
+	
+</html>
