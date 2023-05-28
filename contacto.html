@@ -8,35 +8,23 @@
 	</head>
 	
 	<script>
-		function notEmpty_camps() {
+		
     
+    function notEmpty_camps() {
         let nombre = document.getElementById("nombre").value;
         let email = document.getElementById("email").value;
         let country = document.getElementById("country").value;
-		let comentary = document.getElementById("comentario").value;
-        
-         
-        if (nombre == '') {		
-            alert('Rellena los campos restantes por favor.')
-            return;
+        let comentary = document.getElementById("comentario").value;
+
+        if (nombre === '' || email === '' || country === '' || comentary === '') {
+            alert('Rellena todos los campos por favor.');
+            return false; // Evita el envío del formulario
         }
-        
-        else if (email == '') {		
-            alert('Rellena los campos restantes por favor.')
-            return;
-        }
-        
-        else if (country == none) {		
-            alert('Rellena los campos restantes por favor.')
-            return;
-        }
-		
-		else if (comentary == none) {		
-            alert('Rellena los campos restantes por favor.')
-            return;
-        }
-              
+
+        return true; // Permite el envío del formulario
     }
+              
+    
 	</script>
 	
 	<body>
@@ -58,7 +46,7 @@
 		<main id="contact-main">
 		<h2>Formulario de contacto</h2>
 
-		<form action="https://formsubmit.co/e97c1bef842f36efbb4f2d98737f044a" method="POST">
+		<form action="https://formsubmit.co/e97c1bef842f36efbb4f2d98737f044a" method="POST" onsubmit="notEmpty_camps();">
 		<p><label for="nombre">Nombre:</label> <input type="text" name="contact_name" id="nombre"/></p>
 		<p><label for="gmail">Correo Electrónico:</label> <input type="email" name="contact_mail" id="email"/></p>
 		<p>
@@ -316,7 +304,7 @@
 		<p><label for="comentario">Comentario :</label><br><textarea name="contact_comentario" id="comentario" rows="4" cols="50"></textarea></p>
 				
 
-		<p><input type="submit" value="Enviar" onClick="notEmpty_camps();" /></p>
+		<p><input type="submit" value="Enviar"/></p>
 		
 		<input type="hidden" name="_next" value="https://marcelseto8.github.io/"/>
 		<input type="hidden" name="_captcha" value="false">
