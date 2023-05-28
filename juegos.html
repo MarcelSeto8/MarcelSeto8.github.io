@@ -34,7 +34,7 @@
 		let adivina = [];
 		let current;
 
-		fetch("adivinanzas.json")
+		fetch('adivinanzas.json')
 			.then(response => response.json())
 			.then(data => {
 				adivina = data;
@@ -46,11 +46,32 @@
 
 		function show() {
 			current = adivina[Math.floor(Math.random() * adivina.length)];
-			document.getElementById('pregunta').innerText = current.pregunta;
+			document.getElementById('adivinanza').innerText = current.pregunta;
+		}
+		
+		function respuestacorrecta() {
+		
+			let respuestaUsuario = document.getElementById('respuesta_jugador').value.toLowerCase();
+			
+			if (verificarespuesta(respuestaUsuario, current.respuesta.toLowerCase())) {
+				document.getElementById('respuestafinal').innerHTML = "Enhorabuena! Has acertado";
+				
+			} else {
+				document.getElementById('respuestafinal').innerHTML = "Incorrecto. Prueba con otra respuesta";
+			}
+		}
+		
+		function cambiadivinanza() {
+			show();
+			document.getElementById('answer').value = ''; 
+			document.getElementById('respuestafinal').innerHTML = ''; 
 		}
 
-		
-		
+		function verificarespuesta(respuestaUsuario, respuestaCorrecta) {
+			return respuestaUsuario === respuestaCorrecta;
+		}
+
+			
 		</script>
 		
 	</head>
@@ -78,8 +99,8 @@
 			<button type="button" onClick="adivinaNumero();" id="botoncito">¡Adivina!</button>
 			<hr>
 			<h2 id="titulo_juego">JUEGO 2: Adivina adivinanza...</h2>
-			<p id="pregunta"></p>
-			<p><input type="text" class="numero_jugador" id="answer" placeholder="Escribe aquí tu respuesta..."/></p>
+			<p id="adivinanza"></p>
+			<p><input type="text" class="numero_jugador" id="respuesta_jugador" placeholder="Escribe aquí tu respuesta..."/></p>
 			<button id="respuesta" onClick="respuestacorrecta();">Comprueba</button>
 			<button id="cambiar" onClick="cambiadivinanza();">Cambia Adivinanza</button>
 			<p id="respuestafinal"></p>
