@@ -30,7 +30,27 @@
 				document.getElementById("resultado").innerHTML = ("<strong>Buen trabaho papurri. Encontraste el número</strong>");
 			}
 		}	
-			
+		
+		let adivina = [];
+		let current;
+
+		fetch("adivinanzas.json")
+			.then(response => response.json())
+			.then(data => {
+				adivina = data;
+				show();
+			})
+			.catch(error => {
+				console.error('Error al cargar las adivinanzas:', error);
+			});
+
+		function show() {
+			current = adivina[Math.floor(Math.random() * adivina.length)];
+			document.getElementById('pregunta').innerText = current.pregunta;
+		}
+
+		
+		
 		</script>
 		
 	</head>
@@ -58,9 +78,12 @@
 			<button type="button" onClick="adivinaNumero();" id="botoncito">¡Adivina!</button>
 			<hr>
 			<h2 id="titulo_juego">JUEGO 2: Adivina adivinanza...</h2>
-			<p id="resultado">Introduce un número</p>
-			<p><input type="text" class="numero_jugador" id="numero_jugador"/></p>
-			<button type="button" onClick="adivinaNumero();" id="botoncito">¡Adivina!</button>
+			<p id="pregunta"></p>
+			<p><input type="text" class="numero_jugador" id="answer" placeholder="Escribe aquí tu respuesta..."/></p>
+			<button id="respuesta" onClick="respuestacorrecta();">Comprueba</button>
+			<button id="cambiar" onClick="cambiadivinanza();">Cambia Adivinanza</button>
+			<p id="respuestafinal"></p>
+			
 		</main>
 		
 		<footer>
