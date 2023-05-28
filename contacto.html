@@ -7,6 +7,38 @@
 		<link rel="stylesheet" href="contact.css" />
 	</head>
 	
+	<script>
+		function notEmpty_camps() {
+    
+        let nombre = document.getElementById("nombre").value;
+        let email = document.getElementById("email").value;
+        let country = document.getElementById("country").value;
+		let comentary = document.getElementById("comentario").value;
+        
+         
+        if (nombre == '') {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+        
+        else if (email == '') {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+        
+        else if (country == none) {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+		
+		else if (comentary == none) {		
+            alert('Rellena los campos restantes por favor.')
+            return;
+        }
+              
+    }
+	</script>
+	
 	<body>
 		<header>
 			<h1><a href="index.html">Marcel Setó</a></h1>
@@ -284,7 +316,7 @@
 		<p><label for="comentario">Comentario :</label><br><textarea name="contact_comentario" id="comentario" rows="4" cols="50" required=""></textarea></p>
 				
 
-		<p><input type="submit" value="Enviar" /></p>
+		<p><input type="submit" value="Enviar" onClick="notEmpty_camps();" /></p>
 		
 		<input type="hidden" name="_next" value="https://marcelseto8.github.io/"/>
 		<input type="hidden" name="_captcha" value="false">
