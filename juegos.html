@@ -53,7 +53,7 @@
 		
 			let respuestaUsuario = document.getElementById('respuesta_jugador').value.toLowerCase();
 			
-			if (verificarespuesta(respuestaUsuario, current.respuesta.toLowerCase())) {
+			if (answer_verification(respuestaUsuario, current.respuesta.toLowerCase())) {
 				document.getElementById('respuestafinal').innerHTML = "Correcto!";
 				
 			} else {
@@ -61,13 +61,13 @@
 			}
 		}
 
-		function cambiadivinanza() {
+		function change_adivinanza() {
 			show_adivinanza();
 			document.getElementById('respuesta_jugador').value = ''; 
 			document.getElementById('respuestafinal').innerHTML = ''; 
 		}
 
-		function verificarespuesta(respuestaUsuario, respuestaCorrecta) {
+		function answer_verification(respuestaUsuario, respuestaCorrecta) {
 			return respuestaUsuario === respuestaCorrecta;
 		}
 
@@ -102,7 +102,7 @@
 			<p id="pregunta"></p>
 			<p><input type="text" class="numero_jugador" id="respuesta_jugador" placeholder="Introduce aquí tu respuesta..."/></p>
 			<button id="respuesta" onClick="isCorrect();">Comprueba</button>
-			<button id="cambiar" onClick="cambiadivinanza();">Cambia Adivinanza</button>
+			<button id="cambiar" onClick="change_adivinanza();">Cambia Adivinanza</button>
 			<p id="respuestafinal"></p>
 		</main>
 		
