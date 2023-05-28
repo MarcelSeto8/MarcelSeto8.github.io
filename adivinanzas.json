@@ -1,26 +1,33 @@
 [
-    {
-      "adivinanza": "Oro parece, plata no es. ¿Qué es?",
-      "respuesta": "Plátano"
-    },
-    {
-      "adivinanza": "Blanco por dentro, verde por fuera. Si no lo sabes espera. ¿Qué es?",
-      "respuesta": "Pera"
-    },
-    {
-      "adivinanza": "Tengo agujas y no sé coser, tengo números y no sé leer. ¿Qué es?",
-      "respuesta": "Reloj"
-    },
-    {
-      "adivinanza": "¿Qué animal tiene las patas en la cabeza?",
-      "respuesta": "Piojo"
-    },
-    {
-      "adivinanza": "Su casa es su armadura, y tiene cuatro remos para nadar. ¿Qué es?",
-      "respuesta": "Tortuga"
-    },
-    {
-      "adivinanza": "Tiene cuello y no tiene cabeza, tiene brazos y no tiene manos. ¿Qué es?",
-      "respuesta": "Camisa"
-    }
+
+	{
+		"pregunta": "Oro parece, plata no es. ¿Qué es?",
+		"respuesta": "Plátano"
+	},
+		
+	{
+		"pregunta": "Blanco por dentro, verde por fuera. Si no lo sabes espera. ¿Qué es?",
+		"respuesta": "Pera"
+	},
+
+	{
+		"pregunta": "Tengo agujas y no sé coser, tengo números y no sé leer. ¿Qué es?",
+		"respuesta": "Reloj"
+	},
+
+	{
+		"pregunta": "¿Qué animal tiene las patas en la cabeza?",
+		"respuesta": "Piojo"
+	},
+
+	{
+		"pregunta": "Su casa es su armadura, y tiene cuatro remos para nadar. ¿Qué es?",
+		"respuesta": "Tortuga"
+	},
+
+	{
+		"pregunta": "Tiene cuello y no tiene cabeza, tiene brazos y no tiene manos. ¿Qué es?",
+		"respuesta": "Camisa"
+	}
+
 ]

@@ -41,26 +41,26 @@
 				show();
 			})
 			.catch(error => {
-				console.error('Error al cargar las adivinanzas:', error);
+				console.error('Error al cargar las adivina:', error);
 			});
 
 		function show() {
 			current = adivina[Math.floor(Math.random() * adivina.length)];
-			document.getElementById('adivinanza').innerText = current.adivinanza;
+			document.getElementById('pregunta').innerText = current.pregunta;
 		}
-		
+
 		function respuestacorrecta() {
 		
-			let respuestaUsuario = document.getElementById('respuesta_jugador').value.toLowerCase();
+			let respuestaUsuario = document.getElementById('answer').value.toLowerCase();
 			
 			if (verificarespuesta(respuestaUsuario, current.respuesta.toLowerCase())) {
-				document.getElementById('respuestafinal').innerHTML = "Enhorabuena! Has acertado";
+				document.getElementById('respuestafinal').innerHTML = "Correcto!";
 				
 			} else {
-				document.getElementById('respuestafinal').innerHTML = "Incorrecto. Prueba con otra respuesta";
+				document.getElementById('respuestafinal').innerHTML = "Incorrecto. Prueba otra vez";
 			}
 		}
-		
+
 		function cambiadivinanza() {
 			show();
 			document.getElementById('answer').value = ''; 
@@ -99,12 +99,13 @@
 			<button type="button" onClick="adivinaNumero();" id="botoncito">¡Adivina!</button>
 			<hr>
 			<h2 id="titulo_juego">JUEGO 2: Adivina adivinanza...</h2>
-			<p id="adivinanza"></p>
-			<p><input type="text" class="numero_jugador" id="respuesta_jugador" placeholder="Escribe aquí tu respuesta..."/></p>
+			<p id="pregunta"></p>
+			<div class="adivina"><input type="text" id="answer" placeholder="Por favor introduce una respuesta"></div>
+
 			<button id="respuesta" onClick="respuestacorrecta();">Comprueba</button>
 			<button id="cambiar" onClick="cambiadivinanza();">Cambia Adivinanza</button>
+
 			<p id="respuestafinal"></p>
-			
 		</main>
 		
 		<footer>
